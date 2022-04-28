@@ -11,6 +11,8 @@ class Rectangle {
 
         void set_width(int w);
         void set_height(int h);
+        int get_width() const;
+        int get_height() const;
         int area();
         int perimeter();
 };
