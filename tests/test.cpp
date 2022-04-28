@@ -41,6 +41,35 @@ TEST(Area, Positive){
     EXPECT_EQ(12, rect6.area());
 }
 
+TEST(Area, Negative) {
+    Rectangle rect1(-1, -5);
+    EXPECT_EQ(5, rect1.area());
+}
+
+TEST(Area, LargeNumbers) {
+    Rectangle rect2(1069, 4200);
+    EXPECT_EQ(4489800, rect2.area()); 
+}
+
+TEST(Perimeter, Zeroes) {
+    Rectangle rect3(0, 0);
+    EXPECT_EQ(0, rect3.perimeter());
+} 
+
+TEST(Perimeter, LargeNumbers) {
+    Rectangle rect4(1069, 4200);
+    EXPECT_EQ(10538, rect4.perimeter());
+}
+TEST(Perimeter, Negative) {
+    Rectangle rect5(-7, -9);
+    EXPECT_EQ(-32, rect5.perimeter());
+}
+
+TEST(Perimeter, Positive) {
+    Rectangle rect6(43, 5);
+    EXPECT_EQ (96, rect6.perimeter());
+}
+
 int main(int ac, char *av[]){
   ::testing::InitGoogleTest(&ac, av);
   return RUN_ALL_TESTS();
