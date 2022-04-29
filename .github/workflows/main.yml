@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, acast338/ci_setup, acast338/passing_tests ]
+    branches: [ main, acast338/passing_tests, dwebb019/failing_tests ]
   pull_request:
     branches: [ main ]
 
