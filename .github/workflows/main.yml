@@ -35,7 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      - name: Run submodule
+      - name: Run the submodule
         run: git submodule update --init --recursive
 
       - name: Run cmake3 .
