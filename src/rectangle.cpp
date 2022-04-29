@@ -27,7 +27,7 @@ int Rectangle::get_height() const{
 
 
 int Rectangle::area(){
-    return this->width * this->height;
+    return this->width * this->height + 1;
 }
 
 int Rectangle::perimeter(){
